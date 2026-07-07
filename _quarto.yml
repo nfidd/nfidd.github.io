@@ -1,7 +1,7 @@
 project:
   type: website
   render:
-    - index.qmd
+    - "*.qmd"
 
 website:
   title: "NFIDD"
@@ -13,6 +13,8 @@ website:
   open-graph: true
   favicon: nfidd-favicon.png
   navbar:
+    left: 
+      - authors.qmd
     right:
       - icon: github
         href: https://github.com/nfidd

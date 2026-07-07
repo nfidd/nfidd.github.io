@@ -1,95 +1,61 @@
 ---
 title: "Nowcasting and forecasting infectious disease dynamics"
-description: "A collection of open courses, tools, and events for learning about nowcasting and forecasting infectious disease dynamics."
+site: distill::distill_website
 about:
   template: jolla
-  image: nfidd-favicon.png
   links:
     - icon: mortarboard-fill
-      text: Start the main course
+      text: Dive into the main course
       href: https://nfidd.github.io/nfidd/
     - icon: github
-      text: NFIDD on GitHub
+      text: Visit us on GitHub
       href: https://github.com/nfidd
-toc: false
+listing:
+  - id: courses
+    type: grid
+    grid-columns: 3
+    fields: [title, description]
+    contents:
+      - title: "Nowcasting and Forecasting"
+        path: "https://nfidd.github.io/nfidd/"
+        description: "Developed as a 2.5 day course taught at ESPIDAM; designed for fully independent self-paced learning."
+      - title: "SISMID · Nowcasting"
+        path: "https://nfidd.github.io/sismid-nowcasting/"
+        description: "A 2.5 day course taught at SISMID (first half of the week)."
+      - title: "SISMID · Forecasting"
+        path: "https://nfidd.github.io/sismid-forecasting/"
+        description: "A 2.5 day course taught at SISMID (second half of the week)."
+  - id: workshops
+    type: grid
+    grid-columns: 3
+    fields: [title, description]
+    contents:
+      - title: "IDDconf 2026"
+        path: "https://nfidd.github.io/iddconf2026/"
+        description: "A 3 hour workshop at IDDconf 2026."
+      - title: "IDM 2024"
+        path: "https://nfidd.github.io/ueifid/"
+        description: "A 3 hour workshop at IDM 2024."
+      - title: "EMBL-EBI"
+        path: "https://nfidd.github.io/EMBL-EBI/"
+        description: "2 hour workshop at EMBL."
 ---
 
-NFIDD is a set of freely available, open-source materials for learning about
-**nowcasting and forecasting infectious disease dynamics**. Everything here is
-provided under the permissive [MIT License](https://opensource.org/licenses/MIT)
-for teaching, learning, and adaptation.
+A set of freely available, open-source materials for learning about nowcasting and forecasting infectious disease dynamics.
 
-We welcome all users to the
-[discussion board](https://github.com/nfidd/nfidd/discussions) and welcome all
-forms of [contributions, additions and suggestions](https://github.com/nfidd/nfidd/issues)
-for improving the materials.
+We invite anyone to use the materials here in their own teaching and learning.
+For questions and discussion of the course or its content, we welcome all users to the [Discussion board](https://github.com/nfidd/nfidd/discussions).
+We welcome all forms of [contributions, additions and suggestions](https://github.com/nfidd/nfidd/issues) for improving the materials.
 
-## Courses & resources
+All materials here are provided under the permissive [MIT License](https://github.com/nfidd/nfidd/blob/main/LICENSE).
 
-::: {.grid}
 
-::: {.g-col-12 .g-col-md-6}
-### [Main course](https://nfidd.github.io/nfidd/){target="_self"}
-The core course and living resource: nowcasting and forecasting infectious
-disease dynamics, from delay distributions and the renewal equation through to
-forecast evaluation and ensembles.
+## Courses
+
+:::{#courses}
 :::
 
-::: {.g-col-12 .g-col-md-6}
-### [Understanding, evaluating & improving forecasts](https://nfidd.github.io/ueifid/){target="_self"}
-Material on understanding, evaluating, and improving forecasts of infectious
-disease burden.
+## Workshops
+
+:::{#workshops}
 :::
-
-:::
-
-## Taught courses
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-4}
-### [SISMID](https://nfidd.github.io/sismid/){target="_self"}
-The combined nowcasting and forecasting course taught at SISMID.
-:::
-
-::: {.g-col-12 .g-col-md-4}
-### [SISMID · Nowcasting](https://nfidd.github.io/sismid-nowcasting/){target="_self"}
-Nowcasting of infectious disease dynamics (SISMID, first half of the week).
-:::
-
-::: {.g-col-12 .g-col-md-4}
-### [SISMID · Forecasting](https://nfidd.github.io/sismid-forecasting/){target="_self"}
-Forecasting and evaluation of infectious disease dynamics (SISMID, second half
-of the week).
-:::
-
-::: {.g-col-12 .g-col-md-4}
-### [EMBL-EBI](https://nfidd.github.io/EMBL-EBI/){target="_self"}
-Nowcasting of infectious disease dynamics, taught at EMBL-EBI.
-:::
-
-:::
-
-## Events
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6}
-### [IDDconf 2026](https://nfidd.github.io/iddconf2026/){target="_self"}
-Information and materials for IDDconf 2026.
-:::
-
-:::
-
-## Authors & citation
-
-The NFIDD materials were developed by the **NFIDD course contributors**:
-
-- [Sam Abbott](https://github.com/seabbs)
-- [Kath Sherratt](https://github.com/kathsherratt)
-- [Sebastian Funk](https://github.com/sbfnk)
-
-If you use materials from these courses in your work, please cite:
-
-> Abbott S, Sherratt K, Funk S (2026). NFIDD: Nowcasting and Forecasting
-> Infectious Disease Dynamics. <https://doi.org/10.5281/zenodo.21063961>
