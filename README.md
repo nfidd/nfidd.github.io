@@ -1,22 +1,30 @@
 
-# Nowcasting and forecasting infectious disease dynamics
+# NFIDD landing page
 
-This repository contains the material to create the nfidd course page.
+Source for the NFIDD organisation landing page at
+<https://nfidd.github.io/>. It links out to the individual NFIDD courses,
+resources, and events, each of which lives in its own repository and is
+published at `https://nfidd.github.io/<repo>/`.
 
-All the raw material is in the folder `sessions/` and is written in
-`quarto`. Any changes to the quarto files are automatically updated on
-the web site once committed to the `main` branch.
+The site is a single-page [Quarto](https://quarto.org) website. On every push
+to `main`, the [`deploy`](.github/workflows/deploy.yaml) GitHub Actions workflow
+renders the site and publishes it to the `gh-pages` branch, which GitHub Pages
+serves at the organisation root.
 
-To add a lesson, add a `.qmd` file in the `sessions` folder with a YAML
-field `order:` corresponding to where it fits in, and edit
-`sessions.qmd` to add it to the schedule.
+To add or update a course, edit the card in [`index.qmd`](index.qmd).
 
-## Local testing
+## Local preview
 
-The `html` pages can be generated locally using the function
+Render the site locally with:
 
-``` r
-quarto::quarto_render()
+``` sh
+quarto render
+```
+
+or preview with live reload:
+
+``` sh
+quarto preview
 ```
 
 ## Contributors

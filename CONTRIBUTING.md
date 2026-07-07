@@ -1,46 +1,37 @@
-# Contributing to NFIDD
+# Contributing to the NFIDD landing page
 
-Thanks for helping improve the course. This note covers the conventions for
-writing session content so the material stays consistent and easy to follow.
+Thanks for helping improve the NFIDD landing page. This repository holds only the
+organisation homepage at <https://nfidd.github.io/>. The courses themselves live
+in their own repositories under the [`nfidd` organisation](https://github.com/nfidd)
+— contribute to course content there.
 
-## Callouts and optional material
+## Adding or updating a course, resource, or event
 
-We use a small set of boxed content types. Use them consistently:
+The homepage is a single [Quarto](https://quarto.org) page,
+[`index.qmd`](index.qmd). Each course is a card in one of the grouped grids
+(*Courses & resources*, *Taught courses*, *Events*). To add one, copy an existing
+card block and update the heading, link, and description:
 
-- **Exercises**: `::: {.callout-tip}` with a "Take N minutes" title. The task for
-  participants. Not collapsed.
-- **Solutions**: `::: {.callout-note collapse="true"}` with a "Solution" title.
-  Collapsed so participants try the exercise first.
-- **Essential notes**: `::: {.callout-note}` or `::: {.callout-tip}`. Short
-  clarifications everyone should read. Keep them brief.
-- **Optional asides / going deeper**: add the `.optional` class:
-  `::: {.callout-note .optional collapse="true"}`. The class styles the box as
-  skippable (a "· optional" label and muted border, see `styles.css`). Use it for
-  depth that isn't needed to follow the main thread, and keep it where it makes
-  sense in context.
-- **Self-contained extensions**: put these under the session's `# Going further`
-  heading at the end of the file, rather than inline.
-- **Optional sections kept in place**: if a longer optional section reads best where
-  it sits rather than under "Going further", add the `.optional` class to its
-  heading, e.g. `## Going deeper {.optional}`. It gets the same "· optional" label.
+```markdown
+::: {.g-col-12 .g-col-md-6}
+### [Course title](https://nfidd.github.io/<repo>/){target="_self"}
+One or two sentences describing the course.
+:::
+```
 
-A few rules of thumb:
+Keep links pointing at the published site (`https://nfidd.github.io/<repo>/`), not
+the source repository.
 
-- Use the full `::: {.callout-TYPE}` syntax (braces and a leading dot on the class)
-  and quote attribute values (`collapse="true"`).
-- Don't use `collapse="true"` on its own to mean "optional". Collapse is for
-  Solutions. Mark genuinely optional content with the `.optional` class so readers
-  can tell the difference.
-- Every session ends with one `# Going further` section (a single `#` heading) for
-  self-study material such as challenges and further reading.
+## Previewing locally
 
-## How the course is taught
+```sh
+quarto preview
+```
 
-The taught material is the main thread of each session. Optional asides and the
-"Going further" section are genuinely optional: participants work
-through the main material first and return to optional content later or
-after the course. Bear this in mind when deciding whether new material belongs in
-the main flow or in an optional box.
+This renders the site with live reload so you can check your change before opening
+a pull request.
 
-See also the [learning objectives](reference/learning_objectives.qmd) for what each
-session should leave participants able to do.
+## Reporting problems
+
+Open an [issue](https://github.com/nfidd/nfidd.github.io/issues) for broken links,
+missing courses, or suggestions.

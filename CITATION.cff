@@ -11,8 +11,8 @@ authors:
   - given-names: Sebastian
     family-names: Funk
 license: MIT
-repository-code: "https://github.com/nfidd/nfidd"
-url: "https://nfidd.github.io/nfidd/"
+repository-code: "https://github.com/nfidd/nfidd.github.io"
+url: "https://nfidd.github.io/"
 version: 1.3.1
 date-released: "2026-06-30"
 doi: 10.5281/zenodo.21063961
